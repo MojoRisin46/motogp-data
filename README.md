@@ -55,23 +55,36 @@ This project follows the Medallion Architecture, organizing data into three laye
 ```
 motogp-data/
 │
-├── data/                  # CSV exports and raw/cleaned data (Bronze/Silver/Gold)
-│   └── README.md          # Data dictionary and update log
+├── data/
+│   ├── silver_layer/
+│   └── curated_exports/
 │
-├── notebooks/             # Jupyter Notebooks: official and community analyses
-│   ├── official/          # Notebooks by project maintainers
-│   └── community/         # Community-contributed notebooks and reports
+├── analysis/
+│   ├── owner/
+│   │   ├── sql/
+│   │   └── bi/
+│   └── community/
+│       ├── sql_queries/
+│       ├── bi_dashboards/
+│       ├── notebooks/
+│       └── experiments/
 │
-├── docs/                  # Project documentation, data model diagrams, contribution guides
-│   └── CONTRIBUTING.md    # How to contribute your analysis or tool
+├── docs/
+│   ├── schema.md
+│   ├── query_gallery.md
+│   ├── dwh_architecture.md
+│   ├── dwh_modeling_guidelines.md
+│   └── load_strategy.md
 │
-├── scripts/               # Extraction, transformation, and loading scripts (Python/SQL)
+├── dwh_engineering/                  # 🆕 Scripts und technische Basis
+│   ├── scripts/                      # SQL-Skripte oder Python für Staging, Load, Transform
+│   │   └── silver_layer_loader.sql
+│   └── tests/                        # Testfälle für Datenqualität, Integrität, Relationen
+│       └── test_fk_constraints.sql
 │
-├── api/                   # API docs and access examples for the MySQL database
-│
-├── README.md              # Project overview and instructions
-├── LICENSE                # License information
-└── requirements.txt       # Python dependencies (if applicable)
+├── README.md
+└── CONTRIBUTING.md
+
 ```
 
 ---
