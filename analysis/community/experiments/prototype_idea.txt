@@ -1,1 +1,0 @@
-🏎️ Idea: Simulate virtual races using historical lap data, weather, and qualifying performance to predict outcomes.
