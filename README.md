@@ -38,17 +38,9 @@ This repository is the central hub for collecting, sharing, and analyzing MotoGP
 motogp-data/
 │
 ├── data/
-│   ├── releases/│   
+│   ├── releases/   
 │
-├── analysis/
-│   ├── owner/
-│   │   ├── sql/
-│   │   └── bi/
-│   └── community/
-│       ├── sql_queries/
-│       ├── bi_dashboards/
-│       ├── notebooks/
-│       └── experiments/
+├── community/
 │
 ├── docs/
 │   ├── schema.md
@@ -58,10 +50,8 @@ motogp-data/
 │   └── load_strategy.md
 │
 ├── dwh_engineering/
-│   ├── scripts/                     
-│   │   └── silver_layer_loader.sql
+│   ├── scripts/                   
 │   └── tests/
-│       └── test_fk_constraints.sql
 │
 ├── README.md
 └── CONTRIBUTING.md
@@ -103,7 +93,7 @@ motogp-data/
 We encourage you to:
 
 - Download and explore the data
-- Create and share your own analysis or reports in the `analysis/community/` folder
+- Create and share your own analysis or reports in the `/community` folder
 - Submit issues or pull requests for improvements or corrections
 - Help build the MotoGP analytics community!
 
