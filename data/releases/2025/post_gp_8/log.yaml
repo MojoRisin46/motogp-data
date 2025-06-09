@@ -1,1 +1,12 @@
-
+release_date: 2025-06-09
+season: 2025
+round: 8
+event: "GRAN PREMIO DE ARAGÓN"
+notes: |
+  - New data from Aragon GP
+files updated:
+  - events.csv
+  - sessions.csv
+  - session_results.csv
+related_documents:
+  - analytics-2025-post-event-8.csv
